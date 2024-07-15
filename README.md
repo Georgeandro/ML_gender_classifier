@@ -35,6 +35,23 @@ Using the fastai library, a pre-trained ResNet50 model was fine-tuned with the d
 ### Backend Overview
 
 The backend is developed using FastAPI, a modern, fast (high-performance) web framework for building APIs with Python 3.6+ based on standard Python type hints. The backend handles image uploads and returns predictions using the trained model. Here's an overview of how the backend POST request works:
+Follow the steps below to set up a virtual enviroment and download the required python libraries
+
+For Linux/macOS:
+-python3 -m venv venv
+-source venv/bin/activate
+
+For Windows:
+-python -m venv venv
+-venv\Scripts\activate
+
+-pip install -r backend/requirements.txt
+-pip list
+
+If you want to deactivate the virtual enviroment 
+-deactivate
+
+
 
 1. **File Upload**: The user uploads an image file to the backend via a POST request.
 2. **Image Processing**: The backend reads the image file and converts it into a format suitable for the model.
